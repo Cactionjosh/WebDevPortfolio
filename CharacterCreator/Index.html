@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  color: white;
+  font-size: 40px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+
+}
+
+div.content{
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block; 
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 880px;
+    background-color: #FFF;
+    padding: 2.25em; 
+    box-sizing: border-box;
+    border: solid 2px #DDD; 
+    border-radius: 3%;
+ 
+}
+body{
+   
+    background-image: url("backgroundimage2.jpg");
+}
+
+ table, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    height: 100px;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+}
+th{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+ td  {
+    font-size: 30px;
+    
+}
+.botleft{
+   border-collapse: collapse;
+    border: 1px solid black;
+    float:left;
+    width: 50%;
+    height: 35%;
+    font-size: 20px;
+
+}
+
+.botright{
+ border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: 51%;
+    width: 50%;
+    height: 35%;
+    font-size: 17px;
+    text-align: center;
+}
+.btn {
+    border-radius: 8px;
+    background: darkcyan;
+    color:white;
+    width: 100%;  
+    height: 70px; 
+    font-size: 50px;
+}
+
+</style>
+    </head>
+    <body>
+        <div class="content">
+            <ul class = "header">
+                <li style="float:left"><a style="font-size: 60px;" id="demo"></a></li>
+                <li style="float:right; color:rgb(95, 238, 238)">Armor: <a style="color:rgb(95, 238, 238)" id="armor"> </a></li> 
+                <li style="float:right; color:red">Health: <a style="color:red" id="health"> </a></li>
+                <li style="float:right;  color:greenyellow">Speed: <a style="color:greenyellow" id="speed"> </a></li>
+            </ul>
+            <br>
+          
+ 
+
+        <table style="width:100%">
+            <tr>
+              <th>Strength</th>
+              <th>Dexterity</th> 
+              <th>Constitution</th>
+              <th>Intelligence</th>
+              <th>Wisdom</th>
+              <th>Charisma</th>
+            </tr>
+            <tr>
+              <td id="strength"></td>
+              <td id="dexterity"></td>
+              <td id="constitution"></td>
+              <td id="intelligence"></td>
+              <td id="wisdom"></td>
+              <td id="charisma"></td>
+            </tr>
+          </table>
+    <br><br>
+
+    <div class="botleft">
+        <h2 style="text-align: center">Features and traits:</h2>
+        <p id="f&t" style="margin: 0 10px 0 10px"></p> <hR>
+       
+    </div>
+
+    <div class="botright">
+            <p>Class: <a id="dndclass"></a></p> <hR>
+            <p>Alignment: <a id="alignment"></a></p> <hR>
+            <p>Race: <a id="race"></a></p> <hR>
+            <p>Sex: <a id="sex"></a></p> <hR>
+            <p>Background: <a id="background"></a></p> 
+    </div>     
+    <br><br><br>   
+    <button class="btn" onClick="window.location.reload();" ><b>Create a new character</b></button>
+        </div>
+
+        <script src="Script.js"></script>
+    </body>
+</html>
